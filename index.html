@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mergoffee</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="top-bar">
+    <div class="left-section">
+      <button id="modeToggle">🌙</button>
+      <div class="color-picker">
+        <span class="color-btn" data-theme="default" style="background:#f5f5f5;"></span>
+        <span class="color-btn" data-theme="blue" style="background:#4da3ff;"></span>
+        <span class="color-btn" data-theme="green" style="background:#4dff88;"></span>
+        <span class="color-btn" data-theme="purple" style="background:#b84dff;"></span>
+      </div>
+    </div>
+  
+    <div class="right-section">
+      <button id="fontDown">A-</button>
+      <button id="fontUp">A+</button>
+    </div>
+  </div>
+
+<header>
+  <nav class="navbar">
+    <div class="logo">
+      <img src="Aset/logomergoffee.png" class="logo" alt="">
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="profile.html">Our Profile</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="message.html">Message Us</a></li>
+    </ul>
+  </nav>
+  <hr>
+</header>
+
+<div id="feedbackBtn">Feedback</div>
+<div id="feedbackPopup" style="display:none;">
+  <h4>how useful this page is?</h4>
+  <div class="rating-options">
+      <label><input type="radio" name="rating" value="1"> 1</label>
+      <label><input type="radio" name="rating" value="2"> 2</label>
+      <label><input type="radio" name="rating" value="3"> 3</label>
+      <label><input type="radio" name="rating" value="4"> 4</label>
+      <label><input type="radio" name="rating" value="5"> 5</label>
+    </div>
+  <textarea name="feedbackText" placeholder="write your suggestions..." rows="4"></textarea>
+    <button type="submit">Submit</button>
+  </form>
+</div>
+
+<section id="welcome">
+  <div class="welcome-text">
+    Hi <span id="user-name">Guest</span>, welcome to Mergoffee!
+  </div>
+
+  <input type="text" id="nameInput" placeholder="Enter your name">
+  <button id="updateNameBtn">Update Name</button>
+</section>
+
+  <div class="photo-banner">
+    <img src="Aset/PHOTO-BANNER.png" alt="" />
+  </div>
+</section>
+
+<section class="headquarter">
+  <div class="hq-container">
+    <div class="hq-left">
+      <img src="Aset/bagcoffee.png" alt="" />
+      <p class="photo-caption">Bag Coffee Mergoffee, Temanggung – Taste The Authentic Flavor</p>
+    </div>
+
+    <div class="hq-right">
+      <h2>Our Headquarter</h2>
+      <p>Temanggung is the production center of Mergoffee, connecting local farmers and the roasting process to deliver quality coffee.</p>
+
+      <div class="hq-stats">
+        <div class="stat">
+          <h3>90+</h3>
+          <p>Partner Farmers</p>
+        </div>
+        <div class="stat">
+          <h3>Arabica & Robusta</h3>
+          <p>Superior Coffee Varieties</p>
+        </div>
+        <div class="stat">
+          <h3> &plusmn; 1 Ton</h3>
+          <p>Annual Production</p>
+        </div>
+      </div>
+
+      <div class="hq-map">
+      <div class="map-container">
+        <img src="Aset/map.png" alt="Temanggung, Central Java" class="map-img">
+
+      <div class="pin" style="top: 75%; left: 32%;" title="Temanggung (HQ)"></div>
+      </div>
+
+      <ul class="branch-list">
+        <li>Temanggung (HQ)</li>
+        <li>Semarang (Coming Soon)</li>
+        <li>Bandung (Coming Soon)</li>
+        <li>Malang (Coming Soon)</li>
+      </ul>
+      </div>
+
+      <blockquote>
+        “We are proud to serve the best coffee from Temanggung throughout Indonesia.” – Founder Mergoffee
+      </blockquote>
+    </div>
+  </div>
+</section>
+
+<section id="message">
+  <h2>Message Us</h2>
+  <div class="message-container">
+    <div class="form-section" id="home-message-form">
+      <form id="messageForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter name" required>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+
+        <label>Gender:</label>
+        <div class="gender-group">
+          <input type="radio" id="male" name="gender" value="male" required>
+          <label for="male">Male</label>
+          <input type="radio" id="female" name="gender" value="female" required>
+          <label for="female">Female</label>
+        </div>
+
+        <label for="messageText">Message:</label>
+        <textarea id="messageText" name="messageText" placeholder="Write a message here..." rows="4" required></textarea>
+
+        <button type="submit">Send</button>
+      </form>
+    </div>
+
+    <div class="output-section">
+      <p><strong>Current Time:</strong> <span id="currentTime"></span></p>
+      <p><strong>Name:</strong> <span id="outName"></span></p>
+      <p><strong>Date of Birth:</strong> <span id="outDob"></span></p>
+      <p><strong>Gender:</strong> <span id="outGender"></span></p>
+      <p><strong>Message:</strong> <span id="outMessage"></span></p>
+    </div>
+  </div>
+</section>
+
+<script src="js/script.js"></script>
+
+<footer class="footer">
+    <p>© 2025 Mergoffee — Mergowati Coffee</p>
+  </footer>
+
+</body>
+</html>

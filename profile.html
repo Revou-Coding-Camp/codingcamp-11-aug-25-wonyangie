@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mergoffee</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="top-bar">
+    <div class="left-section">
+      <button id="modeToggle">🌙</button>
+      <div class="color-picker">
+        <span class="color-btn" data-theme="default" style="background:#f5f5f5;"></span>
+        <span class="color-btn" data-theme="blue" style="background:#4da3ff;"></span>
+        <span class="color-btn" data-theme="green" style="background:#4dff88;"></span>
+        <span class="color-btn" data-theme="purple" style="background:#b84dff;"></span>
+      </div>
+    </div>
+  
+    <div class="right-section">
+      <button id="fontDown">A-</button>
+      <button id="fontUp">A+</button>
+    </div>
+  </div>
+
+<header>
+  <nav class="navbar">
+    <div class="logo">
+      <img src="Aset/logomergoffee.png" class="logo" alt="">
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="profile.html">Our Profile</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="message.html">Message Us</a></li>
+    </ul>
+  </nav>
+  <hr>
+</header>
+
+<div id="feedbackBtn">Feedback</div>
+<div id="feedbackPopup" style="display:none;">
+  <h4>how useful this page is?</h4>
+  <div class="rating-options">
+      <label><input type="radio" name="rating" value="1"> 1</label>
+      <label><input type="radio" name="rating" value="2"> 2</label>
+      <label><input type="radio" name="rating" value="3"> 3</label>
+      <label><input type="radio" name="rating" value="4"> 4</label>
+      <label><input type="radio" name="rating" value="5"> 5</label>
+    </div>
+  <textarea name="feedbackText" placeholder="write your suggestions..." rows="4"></textarea>
+    <button type="submit">Submit</button>
+  </form>
+</div>
+
+  <section class="hero">
+    <div class="hero-overlay">
+      <h1>Our Profile</h1>
+      <p>The name "Mergoffee" is taken from the village of Mergowati, where the idea first emerged.
+        Today, Mergoffee has become a symbol of collaboration among coffee farmers throughout Temanggung.</p>
+      <div class="hero-links">
+        <a href="#about" class="chip">About Mergoffe</a>
+        <a href="#history" class="chip">History</a>
+        <a href="#vision-mission" class="chip">Vision & Mission</a>
+        <a href="#halal" class="chip">Halal</a>
+        <a href="#strategy" class="chip">Business Strategy</a>
+      </div>
+    </div>
+  </section>
+
+  <nav class="subnav" aria-label="Profil navigation">
+    <a href="#about">About Mergoffee</a>
+    <a href="#history">History</a>
+    <a href="#vision-mission">Vision & Mission</a>
+    <a href="#halal">Halal</a>
+    <a href="#strategy">Business Strategy</a>
+  </nav>
+
+
+  <main class="container">
+    <section id="about" class="card">
+      <h2>About Mergoffee</h2>
+      <p>
+        Mergoffee was born in 2024 from the passion of Temanggung youth to explore the potential of local coffee. 
+        We started by learning everything about coffee, 
+        mixing coffee grounds and experimenting with brewing methods, 
+        while learning directly from local coffee farmers and producers. 
+        The name <em>Mergoffee</em> combines "Mergowati" (the name of a village in Temanggung, Mergowati) 
+        and "Coffee" – because coffee, stories, and collaboration can grow.
+      </p>
+    </section>
+
+    <section id="history" class="card">
+      <h2>History of The Company</h2>
+      <ul class="timeline">
+        <li>
+          <span class="dot"></span>
+          <div class="tl-content">
+            <h3>2024 – Start of Business</h3>
+            <p>We produce coffee powder for exhibition needs and small market testing, while learning roasting & brewing.</p>
+          </div>
+        </li>
+        <li>
+          <span class="dot"></span>
+          <div class="tl-content">
+            <h3>Product Experiments</h3>
+            <p>We focus on developing premium coffee bags, perfecting roast profiles, and experimenting with sleek, informative packaging.</p>
+          </div>
+        </li>
+        <li>
+          <span class="dot"></span>
+          <div class="tl-content">
+            <h3>Local Collaboration</h3>
+            <p>Learn from local coffee entrepreneurs and involve youth groups in the production and promotion process.</p>
+          </div>
+        </li>
+        <li>
+          <span class="dot"></span>
+          <div class="tl-content">
+            <h3>Future Outlook</h3>
+            <p>We envision expanding our network of farmer partnerships and achieving deeper market penetration.</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section id="vision-mission" class="card">
+      <h2>Vision & Mission</h2>
+      <div class="grid-two">
+        <div class="panel">
+          <h3>Vision</h3>
+          <p><em>To become a Temanggung local coffee brand widely recognized for its quality, sustainability, and social impact.</em></p>
+        </div>
+        <div class="panel">
+          <h3>Misi</h3>
+          <ul class="checklist">
+            <li>Deliver high-quality coffee through hygienic and standardized processes.</li>
+            <li>Collaborate fairly with local farmers and communities.</li>
+            <li>Educate consumers about the rich flavors of Temanggung coffee.</li>
+            <li>Develop innovative flavors and packaging that remain relevant.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="halal" class="card">
+      <h2>Halal & Quality Commitment</h2>
+      <p>
+        All Mergoffee products are processed without harmful additives, 
+        preserving the coffee’s pure flavor. 
+        We are fully committed to maintaining halal compliance and the highest 
+        food safety standards across our production process.
+      </p>
+    </section>
+
+    <h2 id="strategy">Business Strategy</h2>
+      <div class="strategy-wrap">
+      <div class="strategy-diagram" aria-hidden="false">
+     
+        <div class="core" role="img" aria-label="Mergoffee - Core">
+          <span>Mergoffee</span>
+        </div>
+
+        <button class="node top" data-key="partnership"
+              data-title="Farmer partnership"
+              data-desc="Building long-term partnerships with local farmers 
+              through cultivation technique assistance, fair pricing, and prioritizing bean quality.">
+          <span>Partnership</span>
+        </button>
+
+        <button class="node top-right" data-key="production"
+              data-title="Production"
+              data-desc="Roasting and packaging processes are strictly controlled to maintain flavor consistency; 
+              focusing on small-batch production for optimal quality.">
+          <span>Production</span>
+        </button>
+
+        <button class="node bottom-right" data-key="branding"
+              data-title="Branding & Marketing"
+              data-desc="Local branding through storytelling (origin, community service program), 
+              social media marketing, and participation in coffee exhibitions.">
+          <span>Branding</span>
+        </button>
+
+        <button class="node bottom" data-key="distribution"
+              data-title="Distribusi"
+              data-desc="Both online and offline channels: direct-to-customer, 
+              collaboration with local cafés, and pop-up events for market testing.">
+          <span>Distribution</span>
+        </button>
+
+        <button class="node bottom-left" data-key="innovation"
+              data-title="Product Innovation"
+              data-desc="Development of variants (single-origin, blends), 
+              eco-friendly packaging, and ready-to-brew products (bag coffee).">
+          <span>Inovation</span>
+        </button>
+
+        <button class="node top-left" data-key="customers"
+              data-title="Customer & Education"
+              data-desc="Building a consumer community through brewing education, 
+              brewing demonstrations, and a feedback loop for product improvement.">
+          <span>Customer</span>
+        </button>
+      </div>
+
+    <aside class="strategy-panel" aria-live="polite">
+      <h3 class="panel-title">Click on one of the points</h3>
+      <p class="panel-desc">Select the strategy wheel on the left to see details.</p>
+    </aside>
+  </div>
+  </section>
+  </main>
+
+  <script src="js/script.js"></script>
+
+  <footer class="footer">
+    <p>© 2025 Mergoffee — Mergowati Coffee</p>
+  </footer>
+
+</body>
+</html>

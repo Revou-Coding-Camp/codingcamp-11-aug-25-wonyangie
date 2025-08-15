@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mergoffee</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="top-bar">
+    <div class="left-section">
+      <button id="modeToggle">🌙</button>
+      <div class="color-picker">
+        <span class="color-btn" data-theme="default" style="background:#f5f5f5;"></span>
+        <span class="color-btn" data-theme="blue" style="background:#4da3ff;"></span>
+        <span class="color-btn" data-theme="green" style="background:#4dff88;"></span>
+        <span class="color-btn" data-theme="purple" style="background:#b84dff;"></span>
+      </div>
+    </div>
+  
+    <div class="right-section">
+      <button id="fontDown">A-</button>
+      <button id="fontUp">A+</button>
+    </div>
+  </div>
+    
+<header>
+  <nav class="navbar">
+    <div class="logo">
+      <img src="Aset/logomergoffee.png" class="logo" alt="">
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="profile.html">Our Profile</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="message.html">Message Us</a></li>
+    </ul>
+  </nav>
+  <hr>
+</header>
+
+<div id="feedbackBtn">Feedback</div>
+<div id="feedbackPopup" style="display:none;">
+  <h4>how useful this page is?</h4>
+  <div class="rating-options">
+      <label><input type="radio" name="rating" value="1"> 1</label>
+      <label><input type="radio" name="rating" value="2"> 2</label>
+      <label><input type="radio" name="rating" value="3"> 3</label>
+      <label><input type="radio" name="rating" value="4"> 4</label>
+      <label><input type="radio" name="rating" value="5"> 5</label>
+    </div>
+  <textarea name="feedbackText" placeholder="write your suggestions..." rows="4"></textarea>
+    <button type="submit">Submit</button>
+  </form>
+</div>
+
+<section id="message-page">
+    <h2 style="text-align:center;">Message Us</h2>
+    <div class="message-wrapper">
+        
+        <form id="messageFormPage" class="message-card">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter name" required>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <label>Gender:</label>
+            <div class="gender-group">
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female" required>
+                <label for="female">Female</label>
+            </div>
+
+            <label for="messageText">Message:</label>
+            <textarea id="messageText" name="messageText" placeholder="Write a message here..." rows="4" required></textarea>
+
+            <button type="submit">Send</button>
+        </form>
+
+        <div class="message-card output-card">
+            <p><strong>Current Time:</strong> <span id="currentTimePage"></span></p>
+            <p><strong>Name:</strong> <span id="outNamePage"></span></p>
+            <p><strong>Date of Birth:</strong> <span id="outDobPage"></span></p>
+            <p><strong>Gender:</strong> <span id="outGenderPage"></span></p>
+            <p><strong>Message:</strong> <span id="outMessagePage"></span></p>
+        </div>
+
+    </div>
+</section>
+
+<script src="js/script.js"></script>
+
+<footer class="footer">
+    <p>© 2025 Mergoffee — Mergowati Coffee</p>
+  </footer>
+
+</body>
+</html>
