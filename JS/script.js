@@ -50,11 +50,11 @@ document.getElementById("fontDown").addEventListener("click", () => {
   if(feedbackForm){
     feedbackForm.addEventListener("submit", e => {
       e.preventDefault();
-      alert("Terima kasih atas feedbackmu!");
+      alert("Thank you for your feedback!");
       feedbackPopup.style.display = "none";
     });
   }
-
+  
   // ---------------- Strategy Wheel / Profile ----------------
   const panelTitle = document.querySelector('.strategy-panel .panel-title');
   const panelDesc  = document.querySelector('.strategy-panel .panel-desc');
@@ -135,6 +135,33 @@ document.getElementById("fontDown").addEventListener("click", () => {
       if(outMsg) outMsg.textContent = msgForm.querySelector('textarea[name="messageText"]').value;
     });
   }
+
+  // Validasi JS
+    if(!nameInput.value.trim()){
+      alert("Please fill in the name!");
+      nameInput.focus();
+      return;
+    }
+    if(!dobInput.value.trim()){
+      alert("Please fill in your date of birth!");
+      dobInput.focus();
+      return;
+    }
+    if(!genderInput){
+      alert("Please select gender!");
+      return;
+    }
+    if(!messageInput.value.trim()){
+      alert("Please fill in the message!");
+      messageInput.focus();
+      return;
+    }
+
+    // Update output
+    if(outName) outName.textContent = nameInput.value;
+    if(outDob) outDob.textContent = dobInput.value;
+    if(outGender) outGender.textContent = genderInput.value;
+    if(outMsg) outMsg.textContent = messageInput.value;
 
 });
 
