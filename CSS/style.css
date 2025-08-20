@@ -576,21 +576,22 @@ blockquote {
   text-align: left;     
 }
 
-/* Checklist-Paragraf */
-.checklist {
-  margin:6px 0 0 0; 
-  padding-left:18px;
-}
-
-.checklist ul {
-  margin: 6px 0 0 18px;
-  font-size: 1.6rem;
-}
-
 .panel p {
   margin: 6px 0 0 0;
 }
 
+/* Checklist-Paragraf */
+.checklist {
+  margin:6px 0 0 0; 
+  padding-left:18px;
+  font-size: 1.6rem;
+}
+
+.checklist ul {
+  margin: 6px 0 0 18px;
+}
+
+/* Strategy Diagram */
 .note {
   margin-top:8px; 
   padding:10px 12px; 
