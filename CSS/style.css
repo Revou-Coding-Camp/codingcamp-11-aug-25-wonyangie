@@ -345,18 +345,18 @@ blockquote {
 }
 
 .form-section {
-  flex: 1 1 300px; 
-  min-width: auto; 
+  flex: 1 1 auto; 
+  min-width: 200px; 
 }
 
 .output-section {
-  flex: 1 1 300px; 
+  flex: 1 1 auto; 
   box-sizing: border-box;
   border: 2px solid #ccc;
   padding: 10px;
   border-radius: 5px;
   background-color: #f9f9f9;
-  min-width: auto;
+  min-width: 200px;
 }
 
 /* Form vertikal */
@@ -417,10 +417,10 @@ blockquote {
 }
 
 /* Responsive untuk mobile */
-@media (max-width: 768px) {
+@media (max-width: 480px) {
   .message-container {
     flex-direction: column;
-    gap: 15px;
+    gap: 10px;
   }
 
   .form-section, .output-section {
