@@ -428,7 +428,7 @@ blockquote {
   }
 }
 
-/* Dark ModeMessage Us*/
+/* Dark Mode Message Us*/
 .dark-mode #message,
 .dark-mode .form-section,
 .dark-mode .output-section {
@@ -514,17 +514,26 @@ blockquote {
   padding:0 16px; display:grid; gap:16px;
 }
 .card {
-  background:var(--card); 
-  border:1px solid var(--line); 
-  border-radius:14px; 
-  padding:18px 18px; 
-  box-shadow:0 6px 24px rgba(0,0,0,.06);
+  background: var(--card); 
+  border: 1px solid var(--line); 
+  border-radius: 14px; 
+  padding: 1.25rem; 
+  box-shadow: 0 6px 24px rgba(0,0,0,.06);
+  line-height: 1.6;
+  font-size: 1rem;   
 }
-.card h2{margin:6px 0 10px 0}
+.card h2 {
+  margin: 0.4rem 0 0.6rem 0;
+  font-size: 1.5rem;
+}
 
 .timeline {
-  list-style:none; margin:0; 
-  padding:0; position:relative
+  list-style: none; 
+  margin: 0; 
+  padding: 0; 
+  position: relative;
+  font-size: 1rem;
+  line-height: 1.6;
 }
 .timeline li {
   display:flex; gap:12px; 
