@@ -322,6 +322,7 @@ blockquote {
 .message-container {
   display: flex;
   gap: 20px;
+  overflow-x: auto;
   justify-content: space-between;
   align-items: stretch; 
   flex-wrap: nowrap;
