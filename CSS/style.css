@@ -11,6 +11,8 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  background-color: var(--bg-color, #f5f5f5);
+  transition: background-color 0.4s ease, color 0.4s ease;
 }
 
 header {
@@ -109,11 +111,6 @@ body.dark-mode, html.dark-mode {
 }
 
 /* ======================= Top Bar ======================= */
-body {
-  background-color: var(--bg-color, #f5f5f5);
-  transition: background-color 0.4s ease, color 0.4s ease;
-}
-
 .top-bar {
   display: flex;
   justify-content: space-between;
@@ -510,7 +507,7 @@ blockquote {
 .subnav a:hover{text-decoration:underline}
 
 .container {
-  max-width:1000px; margin:24px auto;
+  max-width:100%; margin:24px auto;
   padding:0 16px; display:grid; gap:16px;
 }
 .card {
