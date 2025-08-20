@@ -322,11 +322,24 @@ blockquote {
 .message-container {
   display: flex;
   gap: 20px;
-  overflow-x: auto;
   justify-content: space-between;
   align-items: stretch; 
   flex-wrap: nowrap;
   margin: 0 auto;
+}
+
+.message-scroll-wrapper {
+  overflow-x: auto;
+  padding: 0 20px;    
+}
+
+.message-scroll-wrapper::-webkit-scrollbar {
+  height: 8px;
+}
+
+.message-scroll-wrapper::-webkit-scrollbar-thumb {
+  background: rgba(0,0,0,0.2);
+  border-radius: 4px;
 }
 
 .form-section {
