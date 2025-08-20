@@ -507,7 +507,14 @@ blockquote {
   padding:18px 18px; 
   box-shadow:0 6px 24px rgba(0,0,0,.06);
 }
-.card h2{margin:6px 0 10px 0}
+.card h2 {
+  margin:6px 0 10px 0;
+  font-size: 1.2rem;
+}
+
+.card p {
+  font-size: 1rem;
+}
 
 .timeline {
   list-style:none; margin:0; 
