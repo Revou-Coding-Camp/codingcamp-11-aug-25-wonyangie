@@ -582,8 +582,9 @@ blockquote {
   padding-left:18px;
 }
 
-.benefits ul {
+.checklist ul {
   margin: 6px 0 0 18px;
+  font-size: 1.6rem;
 }
 
 .panel p {
