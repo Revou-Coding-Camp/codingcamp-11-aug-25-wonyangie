@@ -26,17 +26,17 @@ document.addEventListener('DOMContentLoaded', () => {
     document.body.classList.add(`theme-${theme}`);
   }
 
-// ---------------- Font Size Control ----------------
-let fontSize = 16; 
-document.getElementById("fontUp").addEventListener("click", () => {
-  fontSize += 2;
+  // ---------------- Font Size Control ----------------
+  let fontSize = 16; 
+  document.getElementById("fontUp").addEventListener("click", () => {
+   fontSize += 2;
   document.body.style.fontSize = fontSize + "px";
-});
-document.getElementById("fontDown").addEventListener("click", () => {
-  fontSize -= 2;
-  if (fontSize < 10) fontSize = 10; 
-  document.body.style.fontSize = fontSize + "px";
-});
+  });
+  document.getElementById("fontDown").addEventListener("click", () => {
+   fontSize -= 2;
+   if (fontSize < 10) fontSize = 10; 
+   document.body.style.fontSize = fontSize + "px";
+  });
 
   // ---------------- Feedback Popup ----------------
   const feedbackBtn = document.getElementById("feedbackBtn");
