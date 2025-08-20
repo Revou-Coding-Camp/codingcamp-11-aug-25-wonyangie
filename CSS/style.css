@@ -339,17 +339,18 @@ blockquote {
 }
 
 .form-section {
-  flex: 0 0 300px; 
+  flex: 1 1 300px; 
   min-width: auto; 
 }
 
 .output-section {
-  flex: 0 0 300px; 
+  flex: 1 1 300px; 
   box-sizing: border-box;
   border: 2px solid #ccc;
   padding: 10px;
   border-radius: 5px;
   background-color: #f9f9f9;
+  min-width: auto;
 }
 
 /* Form vertikal */
@@ -419,10 +420,6 @@ blockquote {
   .form-section, .output-section {
     flex: 1 1 100%;
     min-width: 0;
-  }
-
-  .output-section {
-    margin-top: 20px;
   }
 }
 
