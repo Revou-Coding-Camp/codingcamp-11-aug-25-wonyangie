@@ -497,10 +497,19 @@ blockquote {
 .subnav a:hover{text-decoration:underline}
 
 .container {
-  max-width:1000px; margin:24px auto;
-  padding:0 16px; display:grid; gap:16px;
+  max-width:1000px;
+  margin:24px auto;
+  padding:0 16px; 
+  display:grid; 
+  gap:16px;
+  box-sizing: border-box;
+  width: 100%;
 }
 .card {
+  flex: 1 1 auto;      
+  min-width: 0;        
+  padding: 18px;
+  box-sizing: border-box;
   background:var(--card); 
   border:1px solid var(--line); 
   border-radius:14px; 
