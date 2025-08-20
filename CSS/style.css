@@ -621,9 +621,10 @@ html{scroll-behavior:smooth}
 .node.active.bottom-right   { transform: translate(var(--pos-x), var(--pos-y)) scale(1.12) translate(10px, 10px); }
 
 .strategy-section { 
-  padding: 28px 16px; 
+  padding: 28px 32px; 
   max-width: 1200px; 
   margin: 0 auto; 
+  box-sizing: border-box;
 }
 .strategy-section h2 { 
   margin: 0 0 14px; 
@@ -646,11 +647,14 @@ html{scroll-behavior:smooth}
   height: var(--size);
   min-width: 280px;
   min-height: 280px;
+  margin: 0 auto;
 }
 
 .strategy-panel {
   flex: 1 1 320px;
   min-width: 260px;
+  margin-left: 8px; 
+  margin-right: 8px;
   background: var(--card, #fff, #4da3ff, #4dff88, #b84dff);
   border: 1px solid rgba(0,0,0,0.06);
   border-radius: 12px;
