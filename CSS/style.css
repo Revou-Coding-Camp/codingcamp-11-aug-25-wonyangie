@@ -339,12 +339,12 @@ blockquote {
 }
 
 .form-section {
-  flex: 0 0 500px; 
+  flex: 0 0 300px; 
   min-width: auto; 
 }
 
 .output-section {
-  flex: 0 0 500px; 
+  flex: 0 0 300px; 
   box-sizing: border-box;
   border: 2px solid #ccc;
   padding: 10px;
