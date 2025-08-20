@@ -328,20 +328,6 @@ blockquote {
   margin: 0 auto;
 }
 
-.message-scroll-wrapper {
-  overflow-x: auto;
-  padding: 0 20px;    
-}
-
-.message-scroll-wrapper::-webkit-scrollbar {
-  height: 8px;
-}
-
-.message-scroll-wrapper::-webkit-scrollbar-thumb {
-  background: rgba(0,0,0,0.2);
-  border-radius: 4px;
-}
-
 .form-section {
   flex: 0 0 500px; 
   min-width: auto; 
