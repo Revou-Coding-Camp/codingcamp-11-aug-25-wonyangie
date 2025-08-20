@@ -321,7 +321,7 @@ blockquote {
 #message {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0px 20px;
+  padding: 0px 10px;
 }
 
 #message h2 {
@@ -413,11 +413,12 @@ blockquote {
 @media (max-width: 768px) {
   .message-container {
     flex-direction: column;
+    gap: 15px;
   }
 
   .form-section, .output-section {
     flex: 1 1 100%;
-    min-width: auto;
+    min-width: 0;
   }
 
   .output-section {
@@ -506,7 +507,7 @@ blockquote {
 .dark-mode .subnav a{color:#e9dccb}
 .subnav a:hover{text-decoration:underline}
 
-.container {
+.profile-container {
   max-width:100%; margin:24px auto;
   padding:0 16px; display:grid; gap:16px;
 }
@@ -518,11 +519,11 @@ blockquote {
   box-shadow: 0 6px 24px rgba(0,0,0,.06);
   line-height: 1.6;
 }
-.card h2 {
+.profile-card h2 {
   margin: 0.4rem 0 0.6rem 0;
   font-size: 1.5rem;
 }
-.card p {
+.profile-card p {
   font-size: 1rem; 
   line-height: 1.6;
 }
