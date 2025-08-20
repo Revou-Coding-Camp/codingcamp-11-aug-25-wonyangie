@@ -660,11 +660,11 @@ html{scroll-behavior:smooth}
 }
 
 .node:nth-child(2) { left: 50%; top: 10%; --pos-x: -50%; --pos-y: -50%; }
-.node:nth-child(3) { left: 85%; top: 35%; --pos-x: -50%; --pos-y: -50%; }
-.node:nth-child(4) { left: 85%; top: 68%; --pos-x: -50%; --pos-y: -50%; }
+.node:nth-child(3) { left: 90%; top: 35%; --pos-x: -50%; --pos-y: -50%; }
+.node:nth-child(4) { left: 90%; top: 68%; --pos-x: -50%; --pos-y: -50%; }
 .node:nth-child(5) { left: 50%; top: 90%; --pos-x: -50%; --pos-y: -50%; }
-.node:nth-child(6) { left: 12%; top: 68%; --pos-x: -50%; --pos-y: -50%; }
-.node:nth-child(7) { left: 12%; top: 35%; --pos-x: -50%; --pos-y: -50%; }
+.node:nth-child(6) { left: 10%; top: 68%; --pos-x: -50%; --pos-y: -50%; }
+.node:nth-child(7) { left: 10%; top: 35%; --pos-x: -50%; --pos-y: -50%; }
 
 .node.active {
   background: linear-gradient(135deg, var(--coffee, #4b3621), #7a4f36);
