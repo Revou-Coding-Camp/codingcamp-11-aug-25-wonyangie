@@ -4,8 +4,13 @@ body, html {
   color: var(--ink);
   background: var(--latte);
   min-height: 100vh; 
+  flex-direction: column;
+}
+
+body {
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
 }
 
 header {
