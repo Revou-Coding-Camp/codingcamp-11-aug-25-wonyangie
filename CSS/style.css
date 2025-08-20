@@ -582,13 +582,19 @@ blockquote {
 
 /* Checklist-Paragraf */
 .checklist {
-  margin:6px 0 0 0; 
+  margin: 6px 0 0 0; 
   padding-left:18px;
-  font-size: 1.6rem;
+  font-size: 1rem;
 }
 
 .checklist ul {
   margin: 6px 0 0 18px;
+}
+
+@media (max-width: 768px) {
+  .checklist li {
+    font-size: 0.9rem; 
+  }
 }
 
 /* Strategy Diagram */
