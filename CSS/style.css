@@ -321,7 +321,7 @@ blockquote {
 #message {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0px 10px;
+  padding: 0px 20px;
 }
 
 #message h2 {
@@ -350,7 +350,6 @@ blockquote {
   padding: 10px;
   border-radius: 5px;
   background-color: #f9f9f9;
-  min-width: auto;
 }
 
 /* Form vertikal */
@@ -414,12 +413,15 @@ blockquote {
 @media (max-width: 768px) {
   .message-container {
     flex-direction: column;
-    gap: 10px;
   }
 
   .form-section, .output-section {
     flex: 1 1 100%;
-    min-width: 0;
+    min-width: auto;
+  }
+
+  .output-section {
+    margin-top: 20px;
   }
 }
 
