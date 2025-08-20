@@ -368,7 +368,7 @@ blockquote {
 #home-message-form .gender-group {
   display: flex;
   align-items: center;
-  margin-bottom: 15px; /* jarak ke textarea */
+  margin-bottom: 15px;
 }
 
 #home-message-form .gender-group input[type="radio"] {
@@ -636,6 +636,7 @@ html{scroll-behavior:smooth}
   align-items: flex-start; 
   justify-content: center; 
   flex-wrap: wrap; 
+  padding: 0 16px;
 }
 
 .strategy-diagram {
