@@ -516,12 +516,11 @@ blockquote {
   box-shadow:0 6px 24px rgba(0,0,0,.06);
 }
 .card h2 {
-  margin:6px 0 10px 0;
-  font-size: 2vw;
+  font-size: clamp(16px, 2vw, 24px);
 }
 
 .card p {
-  font-size: 1.2vw;
+  font-size: clamp(12px, 1.2vw, 18px);
 }
 
 .timeline {
