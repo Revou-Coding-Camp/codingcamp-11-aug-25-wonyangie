@@ -143,7 +143,7 @@ body {
 .theme-green { --bg-color: #d7ffd9; }
 .theme-purple { --bg-color: #e5d0ff; }
 
-.left-section, .right-section {
+.left-section {
   display: flex;
   align-items: center;
   gap: 8px;
