@@ -415,7 +415,7 @@ blockquote {
   }
 }
 
-/* Dark ModeMessage Us*/
+/* Dark ModeMessage Us */
 .dark-mode #message,
 .dark-mode .form-section,
 .dark-mode .output-section {
@@ -444,6 +444,7 @@ blockquote {
 }
 
 /* ======================= Profile ======================= */
+/* Class Hero */
 .hero{
   height:46vh; min-height:320px; position:relative;
   background:
@@ -485,6 +486,7 @@ blockquote {
 }
 .chip:hover{background:rgba(255,255,255,.28)}
 
+/* Class Subnav Profile Navigation */
 .subnav {
   position:sticky; top:0; z-index:10; 
   display:flex; gap:14px; flex-wrap:wrap; 
@@ -496,6 +498,7 @@ blockquote {
 .dark-mode .subnav a{color:#e9dccb}
 .subnav a:hover{text-decoration:underline}
 
+/* Class Container */
 .container {
   max-width:1000px; margin:24px auto;
   padding:0 16px; display:grid; gap:16px;
@@ -522,6 +525,7 @@ blockquote {
   .card p  { font-size: 14px; }
 }
 
+/* Section History */
 .timeline {
   list-style:none; margin:0; 
   padding:0; position:relative
@@ -540,7 +544,7 @@ blockquote {
 .tl-content h3{margin:0 0 6px 0}
 .tl-content p{margin:0}
 
-/* Section card */
+/* Section card visi misi */
 #vision-mission {
   padding: 18px; 
 }
@@ -561,7 +565,7 @@ blockquote {
 
 @media (max-width: 768px) { .grid-two{grid-template-columns:1fr} }
 
-/* Panel Isi */
+/* Class Panel Visi Misi */
 .panel {
   background: linear-gradient(0deg, rgba(47,93,80,.06), rgba(47,93,80,.06));
   border: 1px solid var(--line);
@@ -580,7 +584,7 @@ blockquote {
   margin: 6px 0 0 0;
 }
 
-/* Checklist-Paragraf */
+/* Class Checklist Visi Misi */
 .checklist {
   margin: 6px 0 0 0; 
   padding-left:18px;
