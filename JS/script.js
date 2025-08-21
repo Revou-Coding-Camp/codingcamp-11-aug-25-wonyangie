@@ -103,7 +103,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // ---------------- Message Us Form ----------------
 const msgForm = document.getElementById('messageFormPage') || document.getElementById('messageForm');
+
 if (msgForm) {
+    // Menangkap elemen output
     const outName = document.getElementById('outNamePage') || document.getElementById('outName');
     const outDob = document.getElementById('outDobPage') || document.getElementById('outDob');
     const outGender = document.getElementById('outGenderPage') || document.getElementById('outGender');
@@ -116,16 +118,15 @@ if (msgForm) {
     }
 
     msgForm.addEventListener('submit', e => {
-        // Mencegah form untuk ter-submit secara default
         e.preventDefault();
 
-        // Ambil nilai input di dalam event listener
+        // Menggunakan name attribute untuk mengambil input
         const nameInput = msgForm.querySelector('input[name="name"]');
         const dobInput = msgForm.querySelector('input[name="dob"]');
         const genderInput = msgForm.querySelector('input[name="gender"]:checked');
         const messageInput = msgForm.querySelector('textarea[name="messageText"]');
 
-        // Pindahkan seluruh logika validasi di sini
+        // Validasi
         if (!nameInput.value.trim()) {
             alert("Please fill in the name!");
             nameInput.focus();
@@ -136,7 +137,7 @@ if (msgForm) {
             dobInput.focus();
             return;
         }
-        if (!genderInput) { // Cek apakah ada gender yang dipilih
+        if (!genderInput) {
             alert("Please select gender!");
             return;
         }
@@ -145,11 +146,11 @@ if (msgForm) {
             messageInput.focus();
             return;
         }
-        
-        // Setelah validasi berhasil, baru update output
+
+        // Update output setelah validasi berhasil
         if (outName) outName.textContent = nameInput.value;
         if (outDob) outDob.textContent = dobInput.value;
         if (outGender) outGender.textContent = genderInput.value;
         if (outMsg) outMsg.textContent = messageInput.value;
     });
-  }})
+}})
