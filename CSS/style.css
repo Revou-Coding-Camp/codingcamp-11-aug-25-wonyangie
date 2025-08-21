@@ -527,8 +527,6 @@ blockquote {
   background:var(--leaf); 
   margin-top:8px; flex:0 0 10px;
 }
-.tl-content h3{margin:0 0 6px 0}
-.tl-content p{margin:0}
 
 /* Section card visi misi */
 #vision-mission {
