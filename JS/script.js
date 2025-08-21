@@ -114,54 +114,54 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // ---------------- Message Us Form ----------------
-  const msgForm = document.getElementById('messageFormPage') || document.getElementById('messageForm');
-  if(msgForm){
+const msgForm = document.getElementById('messageFormPage') || document.getElementById('messageForm');
+if (msgForm) {
     const outName = document.getElementById('outNamePage') || document.getElementById('outName');
     const outDob = document.getElementById('outDobPage') || document.getElementById('outDob');
     const outGender = document.getElementById('outGenderPage') || document.getElementById('outGender');
     const outMsg = document.getElementById('outMessagePage') || document.getElementById('outMessage');
     const currentTimeEl = document.getElementById('currentTimePage') || document.getElementById('currentTime');
 
-    if(currentTimeEl){
-      function updateTime(){ currentTimeEl.textContent = new Date().toLocaleTimeString(); }
-      setInterval(updateTime,1000);
+    if (currentTimeEl) {
+        function updateTime() { currentTimeEl.textContent = new Date().toLocaleTimeString(); }
+        setInterval(updateTime, 1000);
     }
 
-    msgForm.addEventListener('submit', e=>{
-      e.preventDefault();
-      if(outName) outName.textContent = msgForm.querySelector('input[name="name"]').value;
-      if(outDob) outDob.textContent = msgForm.querySelector('input[name="dob"]').value;
-      if(outGender) outGender.textContent = msgForm.querySelector('input[name="gender"]:checked')?.value || '';
-      if(outMsg) outMsg.textContent = msgForm.querySelector('textarea[name="messageText"]').value;
+    msgForm.addEventListener('submit', e => {
+        // Mencegah form untuk ter-submit secara default
+        e.preventDefault();
+
+        // Ambil nilai input di dalam event listener
+        const nameInput = msgForm.querySelector('input[name="name"]');
+        const dobInput = msgForm.querySelector('input[name="dob"]');
+        const genderInput = msgForm.querySelector('input[name="gender"]:checked');
+        const messageInput = msgForm.querySelector('textarea[name="messageText"]');
+
+        // Pindahkan seluruh logika validasi di sini
+        if (!nameInput.value.trim()) {
+            alert("Please fill in the name!");
+            nameInput.focus();
+            return;
+        }
+        if (!dobInput.value.trim()) {
+            alert("Please fill in your date of birth!");
+            dobInput.focus();
+            return;
+        }
+        if (!genderInput) { // Cek apakah ada gender yang dipilih
+            alert("Please select gender!");
+            return;
+        }
+        if (!messageInput.value.trim()) {
+            alert("Please fill in the message!");
+            messageInput.focus();
+            return;
+        }
+        
+        // Setelah validasi berhasil, baru update output
+        if (outName) outName.textContent = nameInput.value;
+        if (outDob) outDob.textContent = dobInput.value;
+        if (outGender) outGender.textContent = genderInput.value;
+        if (outMsg) outMsg.textContent = messageInput.value;
     });
-  }
-
-  // Validasi JS
-    if(!nameInput.value.trim()){
-      alert("Please fill in the name!");
-      nameInput.focus();
-      return;
-    }
-    if(!dobInput.value.trim()){
-      alert("Please fill in your date of birth!");
-      dobInput.focus();
-      return;
-    }
-    if(!genderInput){
-      alert("Please select gender!");
-      return;
-    }
-    if(!messageInput.value.trim()){
-      alert("Please fill in the message!");
-      messageInput.focus();
-      return;
-    }
-
-    // Update output
-    if(outName) outName.textContent = nameInput.value;
-    if(outDob) outDob.textContent = dobInput.value;
-    if(outGender) outGender.textContent = genderInput.value;
-    if(outMsg) outMsg.textContent = messageInput.value;
-
-});
-
+}
